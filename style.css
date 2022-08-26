@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: transparent;
+    background-color: #000000;
 }
 
 .col1 {
@@ -97,18 +97,17 @@
 /* Home Section */
 .header {
     width: 100%;
-    height: 100vh;
-    background-image: url(images/bg-1.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .home {
     width: 100%;
-    height: 80%;
+    height: 90vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: url(images/bg-1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .home-content {
@@ -172,7 +171,9 @@
 @media (max-width:800px) {
     .home {
         flex-direction: column;
-        margin-top: 10%;
+        height: auto;
+        padding-top: 5%;
+        padding-bottom: 5%;
     }
 
     .home-content {
@@ -190,17 +191,13 @@
     }
 
     .home-img {
-        width: 70%;
+        width: 60%;
     }
 }
 
 @media (max-width:400px) {
     .home h1 {
         font-size: 30px;
-    }
-
-    .home-content {
-        margin-top: 10%;
     }
 
     .home-img {
